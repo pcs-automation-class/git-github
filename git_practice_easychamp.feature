@@ -5,7 +5,6 @@ Feature: Other
     When Organaizer accepts request
     Then Manager sees their name owners competition
 
-
   Scenario: As a Manager I want be able to pay fixed fee for joining a competition
     Given a Manager joins competition
     And Organaizer accepts request
