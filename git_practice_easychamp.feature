@@ -17,7 +17,8 @@ Feature: Other
     Then registration process radio button "Open" is  checked
     Examples:
       | currency | amount |
-      | PLN      | 100     |
+      | USD      | 4      |
+      | PLN      | 100    |
 
   Scenario: As an organizer I set currency to join as a player with Fixed fee
     Given a Pro account holder with stripe connected is on Championship Registration page
