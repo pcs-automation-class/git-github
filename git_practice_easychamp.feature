@@ -47,3 +47,16 @@ Feature: Other
     When an easychamp user chooses to join this competition as a Manager
     And they accept participation conditions
     Then the pay with PayPal option is available in the payment options window
+
+
+  Scenario: Prevent easychamp user from joining the same team as a manager in a fixed-fee competition
+    Given an easychamp user has joined the fixed-fee competition as a Manager
+    When they navigate to the teams on the competition page
+    Then the team they joined is no longer available for joining as a Manager
+
+  Scenario: in-app confirmation for successful STRIPE payment by easychamp user joining as a Manager in
+  Fixed-Fee competition
+    Given the registration for a fix-fee competition with the join as a Manager option is opened
+    When an easychamp user chooses to pay with STRIPE to join the competition
+    And they enter valid credit card payment information
+    Then they receive in-app successful payment confirmation
