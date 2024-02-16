@@ -18,6 +18,8 @@ Feature: Other
     Examples:
       | currency | amount |
       | USD      | 400    |
+      | EUR      | 10     |
+      | PLN      | 100    |
 
   Scenario: As an organizer I set currency to join as a player with Fixed fee
     Given a Pro account holder with stripe connected is on Championship Registration page
