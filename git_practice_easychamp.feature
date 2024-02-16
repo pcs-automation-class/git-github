@@ -17,7 +17,7 @@ Feature: Other
     Then registration process radio button "Open" is  checked
     Examples:
       | currency | amount |
-      | USD      | 400    |
+      | USD      | 300    |
       | EUR      | 10     |
       | PLN      | 100
 
