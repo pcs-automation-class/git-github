@@ -33,4 +33,4 @@ Feature: Other
       | amount |
       | 0.5    |
       | 5      |
-      | 10     |
+      | 15     |
