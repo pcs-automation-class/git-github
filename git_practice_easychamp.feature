@@ -53,3 +53,9 @@ Feature: Other
     When an easychamp user chooses to pay with STRIPE to join the competition
     And they enter valid credit card payment information
     Then they receive in-app successful payment confirmation
+
+  Scenario: PayPal option is available for an easychamp user joining as Manager in fixed-fee competition
+    Given the registration for a free competition with the join as a Manager option is opened
+    When an easychamp user chooses to join this competition as a Manager
+    And they accept participation conditions
+    Then the pay with PayPal option is available in the payment options window
