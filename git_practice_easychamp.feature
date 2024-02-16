@@ -19,6 +19,7 @@ Feature: Other
       | currency | amount |
       | USD      | 4      |
       | PLN      | 100    |
+      | USD      | 10     |
 
   Scenario: As an organizer I set currency to join as a player with Fixed fee
     Given a Pro account holder with stripe connected is on Championship Registration page
