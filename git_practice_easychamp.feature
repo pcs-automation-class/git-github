@@ -19,7 +19,7 @@ Feature: Other
       | currency | amount |
       | USD      | 400    |
       | EUR      | 10     |
-      | PLN      | 100    |
+      | PLN      | 100
 
   Scenario: As an organizer I set currency to join as a player with Fixed fee
     Given a Pro account holder with stripe connected is on Championship Registration page
@@ -36,3 +36,8 @@ Feature: Other
       | 0.5    |
       | 5      |
       | 10     |
+
+  Scenario: As a Manager I want be able to join a competition for free
+    Given a Manager joins competition
+    When Organaizer accepts request
+    Then Manager sees their name owners competition
