@@ -41,3 +41,9 @@ Feature: Other
     Given a Manager joins competition
     When Organaizer accepts request
     Then Manager sees their name owners competition
+
+  Scenario: PayPal option is available for an easychamp user joining as Manager in fixed-fee competition
+    Given the registration for a free competition with the join as a Manager option is opened
+    When an easychamp user chooses to join this competition as a Manager
+    And they accept participation conditions
+    Then the pay with PayPal option is available in the payment options window
