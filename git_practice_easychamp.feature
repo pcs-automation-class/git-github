@@ -36,3 +36,8 @@ Feature: Other
       | 0.5    |
       | 5      |
       | 15     |
+
+  Scenario: As a Manager I want be able to join a competition for free
+    Given a Manager joins competition
+    When Organaizer accepts request
+    Then Manager sees their name owners competition
