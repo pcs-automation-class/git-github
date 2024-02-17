@@ -20,7 +20,7 @@ Feature: Other
 
       | USD      | 4    |
 
-      | USD      | 300    |
+      | USD      | 500    |
       | EUR      | 10     |
       | PLN      | 100
 
