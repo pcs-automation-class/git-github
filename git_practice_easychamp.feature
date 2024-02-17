@@ -18,7 +18,7 @@ Feature: Other
     Examples:
       | currency | amount |
 
-      | USD      | 5      |
+      | USD      | 4    |
 
       | USD      | 300    |
       | EUR      | 10     |
