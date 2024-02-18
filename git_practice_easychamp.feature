@@ -22,7 +22,7 @@ Feature: Other
 
       | USD      | 500    |
       | EUR      | 10     |
-      | PLN      | 100
+      | PLN      | 1000
 
 
   Scenario: As an organizer I set currency to join as a player with Fixed fee
@@ -37,7 +37,7 @@ Feature: Other
 
     Examples:
       | amount |
-      | 0.5    |
+      | 0.4   |
       | 5      |
       | 10     |
 
