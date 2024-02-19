@@ -18,7 +18,7 @@ Feature: Other
     Examples:
       | currency | amount |
 
-      | USD      | 4    |
+      | EUR      | 10    |
 
       | USD      | 500    |
       | EUR      | 10     |
@@ -39,7 +39,7 @@ Feature: Other
       | amount |
       | 0.4   |
       | 5      |
-      | 10     |
+      | 50     |
 
   Scenario: As a Manager I want be able to join a competition for free
     Given a Manager joins competition
